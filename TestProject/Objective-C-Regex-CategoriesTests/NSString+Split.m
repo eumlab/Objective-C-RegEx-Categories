@@ -14,7 +14,7 @@
 
 - (void) test_split_can_be_called_from_an_NSString
 {
-    NSArray* pieces = [@"I like cats,dogs" split:RX(@"[ ,]")];
+    NSArray* pieces = [@"I like cats,dogs" splitByRegex:RX(@"[ ,]")];
     XCTAssertEqual(pieces.count, 4U, @"Expected array to contain 4 items.");
 }
 

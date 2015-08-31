@@ -62,7 +62,7 @@
     return range.location == NSNotFound ? -1 : (int)range.location;
 }
 
-- (NSArray*) split:(NSString *)str
+- (NSArray*) splitByRegex:(NSString *)str
 {
     NSRange range = NSMakeRange(0, str.length);
     
@@ -243,9 +243,9 @@
     return [rx indexOf:self];
 }
 
-- (NSArray*) split:(NSRegularExpression*)rx
+- (NSArray*) splitByRegex:(NSRegularExpression*)rx
 {
-    return [rx split:self];
+    return [rx splitByRegex:self];
 }
 
 - (NSString*) replace:(NSRegularExpression*)rx with:(NSString*)replacement

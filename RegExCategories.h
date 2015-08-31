@@ -200,7 +200,7 @@
  *  => @[@"A", @"dog", @"cat"]
  */
 
-- (NSArray*) split:(NSString*)str;
+- (NSArray*) splitByRegex:(NSString*)str;
 
 
 /**
@@ -361,7 +361,7 @@
  *  => @[@"A", @"dog", @"cat"]
  */
 
-- (NSArray*) split:(NSRegularExpression*)rx;
+- (NSArray*) splitByRegex:(NSRegularExpression*)rx;
 
 
 /**
