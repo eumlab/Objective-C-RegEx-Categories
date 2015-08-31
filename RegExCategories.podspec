@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Josh Wright" => "josh@joshwright.com" }
   s.ios.deployment_target = ‘4.0’
   s.osx.deployment_target = '10.6’
-  s.source       = { :git => "https://github.com/eumlab/Objective-C-RegEx-Categories.git" }
+  s.source       = { :git => "https://github.com/bendytree/Objective-C-RegEx-Categories.git”, :tag => ‘1.0’ }
   s.source_files  = '*.{h,m}'
   s.requires_arc = true;
 end
